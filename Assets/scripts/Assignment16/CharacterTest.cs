@@ -18,6 +18,10 @@ public class CharacterTest : MonoBehaviour
             {
                 characters[i].DisplayInfo();
             }
+
+            Debug.Log("Soldier Health before attack: "+ soldier.Health);
+            officer.Attack(10, soldier, "shooting"); 
+            Debug.Log("Soldier Health after attack: "+ soldier.Health);
         
     }
 

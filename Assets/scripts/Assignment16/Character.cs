@@ -33,12 +33,12 @@ public class Character
 
     }
 
-    public void Attach(int damage, Character character ){
-    this.Attach(damage,character,"defaultAttack");
+    public void Attack(int damage, Character character ){
+    this.Attack(damage,character,"defaultAttack");
    }
 
    
-    public void Attach(int damage, Character character, string attackType ){
+    public void Attack(int damage, Character character, string attackType ){
     if(attackType=="defaultAttack"){
     character.Health=character.Health-damage;
     }
